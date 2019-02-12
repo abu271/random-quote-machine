@@ -9,7 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      randomNum: Math.floor(Math.random()*50),
+      randomNum: 3,
       quote: [
         {
           "quote": "Life isn’t about getting and having, it’s about giving and being.", "author": "Kevin Kruse"
@@ -21,7 +21,7 @@ class App extends Component {
           "quote": "Strive not to be a success, but rather to be of value.", "author": "Albert Einstein"
         },
         {
-          "quote": "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.", "author": "Robert Frost"
+          "quote": "Two roads diverged in a wood, and I took the one less traveled by, and that has made all the difference.", "author": "Robert Frost"
         },
         {
           "quote": "I attribute my success to this: I never gave or took any excuse.", "author": "Florence Nightingale"
@@ -320,17 +320,12 @@ class App extends Component {
       ]
     }
     this.handleClick = this.handleClick.bind(this)
-    this.handleTweet = this.handleTweet.bind(this)
   }
   
   handleClick() {
     this.setState({
       randomNum: Math.floor(Math.random() * 102)
     })
-  }
-
-  handleTweet() {
-
   }
 
   render() {

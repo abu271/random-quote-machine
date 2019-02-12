@@ -2,7 +2,7 @@ import React from 'react'
 
 const NewQuote = props => {
     return(
-        <button onClick = {props.handleClick}>New quote!</button>
+        <button className="buttonStyle" onClick = {props.handleClick}>New quote!</button>
     )
 }
 

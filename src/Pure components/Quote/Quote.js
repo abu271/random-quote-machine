@@ -1,9 +1,10 @@
 import React from 'react'
+import './Quote.css'
 
 const Quote = props => {
     return(
         <div id = "text">
-            <p>{props.quote}</p>
+            <p>"{props.quote}"</p>
         </div>
     )
 }
