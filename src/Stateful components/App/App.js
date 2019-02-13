@@ -9,6 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      fadeToggle: true,
       randomNum: 3,
       quote: [
         {
@@ -324,13 +325,14 @@ class App extends Component {
   
   handleClick() {
     this.setState({
-      randomNum: Math.floor(Math.random() * 102)
+      randomNum: Math.floor(Math.random() * 102),
+      fadeToggle: !this.state.fadeToggle
     })
   }
 
   render() {
     return (
-      <div id = "quote-box" className="App">
+      <div id = "quote-box" className={this.state.fadeToggle ? "fadeIn" : "fadeOut"}>
         <Quote quote = {this.state.quote[this.state.randomNum].quote} />
         <Author author = {this.state.quote[this.state.randomNum].author} />
         <TwitterButton 
