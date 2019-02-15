@@ -6,11 +6,10 @@
     padding: 40px 25px;
     margin-top: 100px;
     margin-bottom: 100px;
-    opacity: 50%;
 }
 
 .fadeIn {
-    animation: fadeIn 5s;
+    animation: fadeIn 4s;
 }
 
 @keyframes fadeIn {
@@ -23,7 +22,7 @@
 }
 
 .fadeOut {
-    animation: fadeOut 5s;
+    animation: fadeOut 4s;
 }
 
 @keyframes fadeOut {
