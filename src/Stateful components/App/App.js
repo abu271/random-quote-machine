@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import Quote from '../../Pure components/Quote/Quote'
 import Author from '../../Pure components/Author/Author'
 import TwitterButton from '../../Pure components/TwitterButton/TwitterButton'
-import NewQuote from '../../Stateful components/NewQuote/NewQuote'
+import NewQuote from '../../Pure components/NewQuote/NewQuote'
 import './App.css'
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      imageURL: '',
       fadeToggle: true,
       randomNum: 3,
       quote: [
@@ -323,7 +324,8 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this)
   }
   
-  handleClick() {
+  // method to change value of randomNum and change the boolean value of fadeToggle
+  handleClick = () => {
     this.setState({
       randomNum: Math.floor(Math.random() * 102),
       fadeToggle: !this.state.fadeToggle
