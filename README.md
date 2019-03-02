@@ -1,5 +1,4 @@
 # Random  Quote Machine 
-![Typewriter gif](https://media.giphy.com/media/XIqCQx02E1U9W/giphy.gif)
 ### Description:
 By clicking the *New Quote!* button a random inspirational quote would be displayed. Also, your favourite quote can be tweeted by clicking on the twitter icon.
 
