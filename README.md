@@ -7,8 +7,6 @@ This web app used the following technologies:
 * HTML
 * CSS
 * React.js
-* Babel
-* Webpack
 
-### Link:
+### Demo:
 [Click here](https://react-random-quotes.netlify.com/)
