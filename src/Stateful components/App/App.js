@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Quote from '../../Pure components/Quote/Quote'
 import Author from '../../Pure components/Author/Author'
 import TwitterButton from '../../Pure components/TwitterButton/TwitterButton'
@@ -36,7 +36,7 @@ class App extends Component {
         />
         <NewQuote handleClick = {this.handleClick} />
       </div>
-    );
+    )
   }
 }
 
@@ -349,4 +349,4 @@ const quotes = [
   }
 ]
 
-export default App;
+export default App
